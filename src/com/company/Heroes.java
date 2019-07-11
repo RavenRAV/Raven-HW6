@@ -1,6 +1,6 @@
 package com.company;
 
-public class Heroes extends Player{
+public class Heroes extends Player implements SuperAbilityApplicable{
     private String hitType;
 
     public String getHitType() {
@@ -9,5 +9,10 @@ public class Heroes extends Player{
 
     public void setHitType(String hitType) {
         this.hitType = hitType;
+    }
+
+    @Override
+    public void supAbApp() {
+
     }
 }
